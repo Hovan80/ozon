@@ -8,41 +8,44 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="" class="form-wrapper">
+    <section action="" class="form-wrapper">
         <h1>Хотите присоединиться к нам?</h1>
         <h2>Оставьте свои контактные данные</h2>
-
-        <div class="input-wrapper">
-            <label for="second-name">Фамилия:</label>
-            <input id="last-name" name="last-name" type="text">
-        </div>
-
-        <div class="input-wrapper">
-            <label for="first-name">Имя и отчество:</label>
-            <input id="first-name" name="first-name" type="text">
-        </div>
-
-        <div class="input-wrapper">
-            <label for="birthday">Дата рождения:</label>
-            <input id="birthday" name="birthday" type="date">
-        </div>
-
-        <div class="input-wrapper">
-            <label for="phone">Номер телефона:</label>
-            <input id="phone" name="phone" type="text">
-        </div>
-
-        <div class="input-wrapper">
-            <label for="function">Функция:</label>
-            <select name="function" id="function">
-                <option value="">Не выбрано</option>
-                <option value="Курьерские услуги по доставке товаров на авто компании">Курьерские услуги по доставке товаров на авто компании</option>
-                <option value="Курьерские услуги по доставке товаров на личном авто">Курьерские услуги по доставке товаров на личном авто</option>
-                <option value="Курьерские услуги по доставке товаров (пешком)">Курьерские услуги по доставке товаров (пешком)</option>
-                <option value="Курьерские услуги по доставке товаров ">Курьерские услуги по доставке товаров</option>
-            </select>
-        </div>
-    </form>
+        <form>
+            <div class="input-wrapper">
+                <label class="input-wrapper__label" for="last-name">Фамилия:</label>
+                <input class="input-wrapper__input" id="last-name" placeholder="Иванов" name="last-name" type="text">
+            </div>
+            
+            <div class="input-wrapper">
+                <label class="input-wrapper__label" for="first-name">Имя и отчество:</label>
+                <input class="input-wrapper__input" id="first-name" placeholder="Иван Иванович" name="first-name" type="text">
+            </div>
+            
+            <div class="input-wrapper">
+                <label class="input-wrapper__label" for="birthday">Дата рождения:</label>
+                <input class="input-wrapper__input" id="birthday" name="birthday" type="date">
+            </div>
+            
+            <div class="input-wrapper">
+                <label class="input-wrapper__label" for="phone">Номер телефона:</label>
+                <input class="input-wrapper__input" id="phone" name="phone" type="text">
+            </div>
+            
+            <div class="input-wrapper">
+                <label class="input-wrapper__label" for="function">Функция:</label>
+                <select class="input-wrapper__input" name="function" id="function">
+                    <option value="">Не выбрано</option>
+                    <option value="Курьерские услуги по доставке товаров на авто компании">Курьерские услуги по доставке товаров на авто компании</option>
+                    <option value="Курьерские услуги по доставке товаров на личном авто">Курьерские услуги по доставке товаров на личном авто</option>
+                    <option value="Курьерские услуги по доставке товаров (пешком)">Курьерские услуги по доставке товаров (пешком)</option>
+                    <option value="Курьерские услуги по доставке товаров ">Курьерские услуги по доставке товаров</option>
+                </select>
+            </div>
+        <form>
+        <p>Нажимая на кнопку «Отправить», даю согласие на обработку персональных данных</p>
+        <button>Отправить</button>
+    </section>
 
     <script src="main.js"></script>
 </body>

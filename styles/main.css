@@ -1,12 +1,13 @@
-body{
-    background-color: black;
-    font-family: "GT";
+:root{
+    --ozon-blue: #005bff;
+    --ozon-magenta: #f91155;
+    --ozon-dark-space: #001a34;
+    --ozon-figi: #00bebe;
+    --ozon-flamingo: #ff96bb;
 }
 
-.input-wrapper{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 10px;
+body{
+    color: #001a34;
 }
 
 .form-wrapper{
@@ -15,4 +16,33 @@ body{
     border-radius: 15px;
     display: flex;
     flex-direction: column;
+}
+
+.input-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.input-wrapper__input{
+    background-color: transparent;
+    border: 1px solid rgb(204, 214, 222);
+    border-radius: 8px;
+    color: #001a34;
+    font-family: 'GT Eesti Pro Display';
+    font-size: 16px;
+    font-weight: 400;
+    height: 44px;
+    line-height: 1.33;
+    padding: 0 20px;
+}
+:active, :hover, :focus{
+    outline: none;
+    outline-offset: 0;
+}
+
+
+.input-wrapper__label{
+    margin-bottom: 4px;
+    font-size: 14px;
 }
